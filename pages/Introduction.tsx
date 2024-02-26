@@ -4,13 +4,13 @@ import fadeInOnScroll from 'utils/fadeInOnScroll';
 
 const Introduction = () => {
   const [isVisible, ref] = fadeInOnScroll();
-  const typewriterDuration = "Hello, I'm Jareddddd".length * 0.1;
+  const typewriterDuration = "Hello, I'm Tatiana".length * 0.1;
   
   
   return (
     <>
       <div className={styles.header}>
-        {("Hello, I'm Jared").split("").map((char, index) => (
+        {("Hello, I'm Tatiana Oropel").split("").map((char, index) => (
           <h1 
           key = {index}
           style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}
@@ -48,8 +48,8 @@ const Introduction = () => {
       <div className={`${styles.aboutMe} ${isVisible ? styles.visible: ''}`}>
         <h2>About</h2>
         <p>
-          Hey there! Thank you for dropping by! My name is Jared Perez and I am a data scientist, analyst, software engineer,
-          exercise physiologist and sport scientist. 
+          Hey there! Thank you for dropping by! My name is Tatiana Oropel and I am a data analyst, TESOL profesor,
+          economist, and global educator. 
           In my free time I like walking dogs, learning new technical skills, working on new engineering projects, olympic weightlifting, and jumping out of airplanes.
           I hope you enjoy exploring this webpage as much as I enjoyed making it and get to learn a little about me in the process.
           <br />
